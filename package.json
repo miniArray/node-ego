@@ -1,0 +1,33 @@
+{
+  "name": "node-ego",
+  "version": "0.1.0",
+  "description": "Find your rank on Google and other search engines.",
+  "main": "src/ego.js",
+  "bin": {
+    "node-ego": "ego.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miniArray/node-ego.git"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "google",
+    "rank",
+    "coffeescript",
+    "scrape"
+  ],
+  "author": "Simon W. Jackson",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "e8e80630841e645ecefa27da3a67819f2e34d1d0"
+}
