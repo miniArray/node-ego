@@ -81,9 +81,11 @@ rank = (searchPhrase, urlChecker, callback) ->
   if _.isObject searchPhrase
     settings = _.extend {}, searchPhrase
     urlChecker = defaultUrlChecker settings.phrase
+  else if _.isString urlChecker
     urlChecker = defaultUrlChecker urlChecker
 
   else if typeof urlChecker isnt 'function'
+  else if not _.isFunction urlChecker
     throw new Error 'urlChecker needs to be a string or a function'
     
   pageNum = 1
