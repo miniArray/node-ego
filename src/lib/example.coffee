@@ -1,7 +1,8 @@
 util = require('util')
-gr = require('./ego')
+ego = require('./ego')
 
-gr.rank "node.js", "nodejs.org", (error, result) ->
+###
+ego.rank "node.js", "nodejs.org", (error, result) ->
   if error
     console.error(error);
     process.exit(1)
@@ -13,8 +14,8 @@ util = require 'util'
 ego = require './ego'
 
 ego.rank
-	query: ""
-	domain: ""
+	phrase: "node.js"
+	domain: "nodejs.org"
 	error: ->
 		console.error error
 		process.exit 1
