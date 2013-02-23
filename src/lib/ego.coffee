@@ -78,7 +78,9 @@ getGoogleResultsPage = (url, callback) ->
 #  - can be a function, gets a result array (w/url, title, description), should return true on match.
 # callback gets [error, result] where result contains page & ranking, or false if not found.
 rank = (searchPhrase, urlChecker, callback) ->
-  if typeof urlChecker is 'string'
+  if _.isObject searchPhrase
+    settings = _.extend {}, searchPhrase
+    urlChecker = defaultUrlChecker settings.phrase
     urlChecker = defaultUrlChecker urlChecker
 
   else if typeof urlChecker isnt 'function'
