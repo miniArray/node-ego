@@ -1,4 +1,4 @@
-ego = require './ego'
+ego = require './src/lib/ego'
 
 ego.rank
   phrase: "my 2013 Frontend developer workflow"
