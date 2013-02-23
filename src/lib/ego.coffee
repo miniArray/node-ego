@@ -10,7 +10,7 @@ Licensed under the MIT license.
 
 jscrape = require 'jscrape' # lazy combo of jquery+jsdom+request
 async = require 'async'
-underscore = require 'underscore'
+_ = require 'underscore'
 
 domain = 'http://www.google.com' # maybe expand to other languages?
 
