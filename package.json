@@ -1,23 +1,48 @@
 {
   "name": "node-ego",
-  "version": "0.1.0",
   "description": "Find your rank on Google and other search engines.",
-  "main": "src/ego.js",
-  "bin": {
-    "node-ego": "ego.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "homepage": "https://github.com/miniArray/node-ego",
+  "author": {
+    "name": "Simon W. Jackson",
+    "email": "simon@simonwjackson.com",
+    "url": "http://www.miniarray.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/miniArray/node-ego.git"
   },
+  "bugs": {
+    "url": "https://github.com/miniArray/node-ego/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/miniArray/node-ego/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "bin/lib/ego",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt simplemocha"
+  },
   "dependencies": {
+    "jscrape": "0.0.4",
+    "async": "~0.1.22",
     "coffee-script": "*",
     "underscore": "*"
   },
   "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-coffee": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-coffeelint": "~0.0.5",
+    "grunt-simple-mocha": "~0.3.2",
+    "should": "~1.2.2",
     "grunt": "~0.4.0"
   },
   "keywords": [
@@ -25,9 +50,5 @@
     "rank",
     "coffeescript",
     "scrape"
-  ],
-  "author": "Simon W. Jackson",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "gitHead": "e8e80630841e645ecefa27da3a67819f2e34d1d0"
+  ]
 }
