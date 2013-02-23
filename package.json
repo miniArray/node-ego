@@ -29,10 +29,10 @@
     "test": "grunt simplemocha"
   },
   "dependencies": {
-    "jscrape": "0.0.4",
-    "async": "~0.1.22",
+    "google": "*",
     "coffee-script": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "pagerank": "*"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
