@@ -47,7 +47,6 @@ rank = (options) ->
       nextCounter++
       if next
         setTimeout( ->
-          console.log 'sleeping'
           next()
         , settings.delay)
 
