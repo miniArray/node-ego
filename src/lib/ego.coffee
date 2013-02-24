@@ -25,8 +25,7 @@ rank = (options) ->
   nextCounter = 0
 
   google settings.phrase, (err, next, links) ->
-    if err
-      console.error err
+    if err then settings.error err 
 
     i = 0
     while i < links.length
