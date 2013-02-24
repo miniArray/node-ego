@@ -12,13 +12,16 @@ _ = require 'underscore'
 google = require 'google'
 url = require 'url'
 
-rank = (options) ->
-  settings =
-    phrase: -> throw Error 'You must specify a search phrase'
-    domain: -> throw Error 'You must specify a domain'
-    success: -> throw Error 'You must define a callback'
-    delay: 0
 
+settings =
+  phrase: -> throw Error 'You must specify a search phrase'
+  domain: -> throw Error 'You must specify a domain'
+  success: -> throw Error 'You must define a callback'
+  delay: 0
+
+module.exports.settings = settings
+
+rank = (options) ->
   settings = _.extend settings, options
 
   google.resultsPerPage = 25
