@@ -19,7 +19,7 @@ settings =
   success: -> throw Error 'You must define a callback'
   delay: 0
 
-module.exports.settings = settings
+module.exports.options = settings
 
 rank = (options) ->
   settings = _.extend settings, options

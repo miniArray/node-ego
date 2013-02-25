@@ -23,7 +23,7 @@ ego.rank
 Google will temporarily block searches if they suspect you're automating searches. You can specify a delay (in milliseconds) between each pagination to avoid this.
 
 ```coffeescript
-ego.settings.delay = 5000
+ego.options.delay = 5000
 
 # or
 
