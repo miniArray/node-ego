@@ -3,7 +3,7 @@
 Find your rank on Google and other search engines.
 
 ## Getting Started
-Install the module with: `npm install node-ego`
+Install the module with: `npm install ego`
 
 ```coffeescript
 ego = require 'ego'
@@ -40,6 +40,10 @@ _(Coming soon)_
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## Roadmap
+
+* Incorporate bing/yahoo
 
 ## Release History
 
