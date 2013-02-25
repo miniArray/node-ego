@@ -3,33 +3,52 @@
 Find your rank on Google and other search engines.
 
 ## Getting Started
-Install the module with: `npm install node-ego`
+Install the module with: `npm install ego`
 
 ```coffeescript
-ego = require './ego'
+ego = require 'ego'
 
 ego.rank
-  phrase: "my 2013 Frontend developer workflow"
-  domain: "miniarray.com"
-  delay: 1000
-  error: (error) ->
-    console.error error
-    process.exit 1
+  phrase: "ebay"
+  domain: "ebay.com"
   success: (result) ->
-    console.log "#{@domain}:\n  page: #{result.page}\n  position: #{result.position}\n  phrase: #{@phrase}"
+    console.log "Google position: #{result.position}"
+```
+*output: "Google position: 1"*
+
+## Examples
+
+### Delay
+
+Google will temporarily block searches if they suspect you're automating searches. You can specify a delay (in milliseconds) between each pagination to avoid this.
+
+```coffeescript
+ego.options.delay = 5000
+
+# or
+
+ego.rank
+  delay: 5000
+  phrase: "ebay"
+  domain: "ebay.com"
+  success: (result) ->
+    console.log "Google position: #{result.position}"
 ```
 
 ## Documentation
 _(Coming soon)_
 
-## Examples
-_(Coming soon)_
-
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
+## Roadmap
+
+* Incorporate bing/yahoo
+
 ## Release History
-_(Nothing yet)_
+
+### v0.1.0
+* now using node-google
 
 ## License
 Copyright (c) 2013 Simon W. Jackson  
