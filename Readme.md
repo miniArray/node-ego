@@ -1,5 +1,7 @@
 # node-ego
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/miniArray/node-ego.svg)](https://greenkeeper.io/)
+
 Find your rank on Google and other search engines.
 
 ## Getting Started
